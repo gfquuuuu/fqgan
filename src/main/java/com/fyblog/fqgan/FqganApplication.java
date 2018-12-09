@@ -26,9 +26,7 @@ public class FqganApplication {
 	@RequestMapping("/{str}")
 	@TimeOut
 	public String hello(@PathVariable("str") String str) {
-		
 		System.out.println("hello world");
-		
 		return str;
 	}
 	
