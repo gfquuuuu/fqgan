@@ -27,19 +27,20 @@ public class FqganApplication {
 	@TimeOut
 	public String hello(@PathVariable("str") String str) {
 		System.out.println("hello world");
+		
 		return str;
 	}
 	
 	@Scheduled(fixedRate = 100000)
 	public void tests() {
-		System.out.println("定时任务");
+		System.out.println("瀹氭椂浠诲姟");
 	}
 	
 	@RequestMapping("/email/{str}")
 	public String sendMail(@PathVariable("str") String msg) {
-		System.out.println("========开发发送邮件============");
+		System.out.println("========寮�鍙戝彂閫侀偖浠�============");
 		mailService.sendMail(msg);
-		System.out.println("========邮件发送完毕============");
+		System.out.println("========閭欢鍙戦�佸畬姣�============");
 		return msg;
 	}
 	
