@@ -8,7 +8,7 @@ import com.fyblog.fqgan.event.EmailEvent;
 import com.fyblog.fqgan.event.LoginEvent;
 
 /**
- * 相关事件监听类
+ * 鐩稿叧浜嬩欢鐩戝惉绫�
  * @author Administrator
  *
  */
@@ -17,7 +17,8 @@ public class CommonEventListener {
 	
 	@EventListener
 	public void sendMail(EmailEvent emailEvent) {
-		System.out.println("发送邮件: " + emailEvent.getMsg());
+		System.out.println("鍙戦�侀偖浠�: " + emailEvent.getMsg());
+		System.out.println("鍙戦�侀偖浠�: " + emailEvent.getMsg());
 	}
 	
 	@EventListener
@@ -28,7 +29,7 @@ public class CommonEventListener {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		System.out.println("用户登陆: 用户名=" + loginEvent.getUserEntity().getUserName() + "密码=" + loginEvent.getUserEntity().getPassword());
+		System.out.println("鐢ㄦ埛鐧婚檰: 鐢ㄦ埛鍚�=" + loginEvent.getUserEntity().getUserName() + "瀵嗙爜=" + loginEvent.getUserEntity().getPassword());
 	}
 	
 	
