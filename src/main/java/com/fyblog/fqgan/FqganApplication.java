@@ -33,6 +33,7 @@ public class FqganApplication {
 	@Scheduled(fixedRate = 100000)
 	public void tests() {
 		System.out.println("定时任务");
+		
 	}
 	
 	@RequestMapping("/email/{str}")
